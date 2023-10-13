@@ -23,7 +23,6 @@ describe Solver do
       number = -5
       expect(solver.factorial(number)).to eq('Input must be a non-negative integer')
     end
-
   end
 
   describe '#reverse' do
