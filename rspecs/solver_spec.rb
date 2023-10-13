@@ -18,6 +18,12 @@ describe Solver do
       number = 0
       expect(solver.factorial(number)).to eq(1)
     end
+
+    it 'show the factorial of -5' do
+      number = -5
+      expect(solver.factorial(number)).to eq('Input must be a non-negative integer')
+    end
+
   end
 
   describe '#reverse' do
