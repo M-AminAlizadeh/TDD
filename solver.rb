@@ -1,6 +1,12 @@
 class Solver
   def factorial(number)
-    number.zero? ? 1 : number * factorial(number - 1)
+    if number < 0
+      'Input must be a non-negative integer'
+    elsif number.zero?
+      1
+    else
+      number * factorial(number - 1)
+    end
   end
 
   def reverse(word)
